@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 const Button = styled.button`
-    display: none;
+    display: block;
     width: 100%;
     padding: 10px;
     background-color: ${({ theme }) => theme.white};
@@ -83,15 +83,15 @@ const Title = styled.div`
     text-overflow: ellipsis;
 `
 
-const Date = styled.div`
-    font-size: 12px;
-    margin-left: 2px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
+// const Date = styled.div`
+//     font-size: 12px;
+//     margin-left: 2px;
+//     font-weight: 400;
+//     color: ${({ theme }) => theme.text_secondary + 80};
+//     @media only screen and (max-width: 768px){
+//         font-size: 10px;
+//     }
+// `
 
 
 const Description = styled.div`
@@ -127,20 +127,20 @@ const ProjectCards = ({ project, setOpenModal }) => {
             <Image src={project.image} />
             <Tags>
                 {project.tags?.map((tag, index) => (
-                    <Tag>{tag}</Tag>
+                    <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
                 <Title>{project.title}</Title>
-                <Date>{project.date}</Date>
+                {/* <Date>{project.date}</Date> */}
                 <Description>{project.description}</Description>
             </Details>
             <Members>
                 {project.member?.map((member) => (
-                    <Avatar src={member.img} />
+                    <Avatar key={member} src={member.img} />
                 ))}
             </Members>
-            {/* <Button>View Project</Button> */}
+            <Button>View Project</Button>
         </Card>
     )
 }

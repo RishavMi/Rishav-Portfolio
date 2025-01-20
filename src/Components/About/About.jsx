@@ -36,7 +36,7 @@ export const Title = styled.div`
 `;
 
 export const Desc = styled.div`
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
@@ -111,79 +111,63 @@ const SkillItem = styled.p`
 `;
 
 const About = () => {
-    const businessDevelopmentSkills = [
-        {
-            title: 'Strategic Planning & Execution',
-            skills: [
-                'Market research and analysis',
-                'Goal setting and achievement',
-                'Developing growth strategies',
-            ],
-        },
-        {
-            title: 'Client Relationship Management',
-            skills: [
-                'Building long-term partnerships',
-                'Negotiating contracts and deals',
-                'Providing client-focused solutions',
-            ],
-        },
-        {
-            title: 'Sales & Lead Generation',
-            skills: [
-                'Generating qualified leads',
-                'Managing the sales pipeline',
-                'Executing successful sales strategies',
-            ],
-        },
-        {
-            title: 'Team Leadership & Collaboration',
-            skills: [
-                'Leading cross-functional teams',
-                'Collaboration with stakeholders',
-                'Managing and mentoring teams',
-            ],
-        },
-        {
-            title: 'Financial Acumen & Budgeting',
-            skills: [
-                'Managing budgets and financial forecasting',
-                'Analyzing key performance indicators',
-                'Making data-driven business decisions',
-            ],
-        },
-        {
-            title: 'Communication & Presentation Skills',
-            skills: [
-                'Delivering persuasive presentations',
-                'Effective negotiation techniques',
-                'Strong written and verbal communication',
-            ],
-        },
-    ];
+  const businessDevelopmentSkills = [
+    {
+      title: 'Project Mannagement',
+      skills: [
+        'Agile, Scrum, Waterfall',
+        'Risk assessment and mitigation',
+        'Jira, Asana, MS Project tools',
+      ],
+    },
+    {
+      title: 'Bussiness Development',
+      skills: [
+        'Market Analysis and prospecting',
+        'Sales funnel optimization',
+        'CRM Tools Salesforce, Apollo.io',
+      ],
+    },
+    {
+      title: 'Client Relationship Management',
+      skills: [
+        'Client needs assessment',
+        'Feedback - driven improvement',
+        'Proactive issue resolution',
+      ],
+    },
+    {
+      title: 'Straegic Planning & Analytics',
+      skills: [
+        'KPI monitoring and reporting',
+        'Google Analytics expertise',
+        'Market trend analysis',
+      ],
+    },
+  ];
 
-    return (
-        <Container id="about">
-            <Wrapper>
-                <Title>Business Development Skills</Title>
-                <Desc>
-                    These are the core skills I bring as a Business Development Manager, helping companies grow by identifying new opportunities and building strong client relationships.
-                </Desc>
-                <SkillsContainer>
-                    {businessDevelopmentSkills.map((section) => (
-                        <SkillSection key={section.title}>
-                            <SectionTitle>{section.title}</SectionTitle>
-                            <SectionContent>
-                                {section.skills.map((skill, index) => (
-                                    <SkillItem key={index}>{skill}</SkillItem>
-                                ))}
-                            </SectionContent>
-                        </SkillSection>
-                    ))}
-                </SkillsContainer>
-            </Wrapper>
-        </Container>
-    );
+  return (
+    <Container id="about">
+      <Wrapper>
+        <Title>Project Management Skills</Title>
+        <Desc>
+          These are the core skills I bring as a Project Manager, helping companies grow by identifying new opportunities and building strong client relationships.
+        </Desc>
+        <SkillsContainer>
+          {businessDevelopmentSkills.map((section) => (
+            <SkillSection key={section.title}>
+              <SectionTitle>{section.title}</SectionTitle>
+              <SectionContent>
+                {section.skills.map((skill, index) => (
+                  <SkillItem key={index}>{skill}</SkillItem>
+                ))}
+              </SectionContent>
+            </SkillSection>
+          ))}
+        </SkillsContainer>
+      </Wrapper>
+    </Container>
+  );
 };
 
 export default About;

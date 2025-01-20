@@ -1,13 +1,18 @@
+import project1 from "../assets/project1.png"
+import project2 from "../assets/project2.png"
+import project3 from "../assets/project3.png"
+
+
+
 export const Bio = {
     name: "Rishav Mishra",
     roles: [
-        "Business Development",
+        "Project Manager",
         "Strategic Planner",
         "Client Relationship",
         "Growth Specialist",
     ],
-    description:
-        "I am a proactive and results-driven Business Development Manager, with a passion for identifying growth opportunities and building strong client relationships. I excel at driving business success through strategic planning and innovative solutions. With a positive attitude and a keen understanding of market trends, I am dedicated to fostering sustainable growth, expanding business networks, and delivering impactful results that align with organizational goals.",
+    description: "I am Rishav Mishra, a seasoned project manager and business development professional passionate about delivering transformative projects. With over six years of experience managing diverse teams, optimizing processes, and building strong client relationships, I bring a unique blend of analytical expertise and strategic vision.",
     resume: "",
     linkedin: "https://www.linkedin.com",
     twitter: "https://twitter.com",
@@ -226,50 +231,60 @@ export const skills = [
 export const experiences = [
     {
         id: 0,
-        img: "https://media.licdn.com/dms/image/v2/C4D0BAQHcybBSpFFXlA/company-logo_200_200/company-logo_200_200/0/1631865423524/nargeeks_logo?e=1744243200&v=beta&t=VzEZPy0XpDvooRwZuSPTsIWebMfb704zRR4lkcbAj3s",
-        role: "Bussiness Development Manager",
-        company: "Nargeek",
-        date: "Sept 2020 - sept 2022",
-        desc: ".",
+        img: "https://st2.depositphotos.com/1038076/7301/i/450/depositphotos_73018645-stock-photo-freelance.jpg",
+        role: "Freelance Project Manager",
+        date: "Oct 2020 – Present | Durgapur, India",
         skills: [
-            "Market Expansion & Strategy Development",
-            "Client Relationship & Account Management",
-            "Sales Growth & Lead Generation",
-            "Cross-functional Team Leadership & Collaboration",
-            "Budgeting, Financial Analysis & Forecasting",
+            "Managed multiple client projects, delivering within budget and timelines.",
+            "Optimized workflows, reducing delivery time by 15%.",
+            "Built and coordinated a team of freelancers for diverse projects.",
+            "Successfully mitigated risks, ensuring 95% client satisfaction."
         ],
     },
     {
         id: 1,
-        img: "https://media.licdn.com/dms/image/v2/C4D0BAQHcybBSpFFXlA/company-logo_200_200/company-logo_200_200/0/1631865423524/nargeeks_logo?e=1744243200&v=beta&t=VzEZPy0XpDvooRwZuSPTsIWebMfb704zRR4lkcbAj3s",
-        role: "Bussiness Development Manager",
-        company: "Nargeek",
-        date: "Sept 2020 - sept 2022",
-        desc: ".",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuOO_vDk2qO_F8ikoXqUnYaFi143gOQcOp3Q&s",
+        role: "Business Development Manager | Neosoft Technologies",
+        date: "June 2023 – Nov 2024 | Pune, India",
         skills: [
-            "Market Expansion & Strategy Development",
-            "Client Relationship & Account Management",
-            "Sales Growth & Lead Generation",
-            "Cross-functional Team Leadership & Collaboration",
-            "Budgeting, Financial Analysis & Forecasting",
+            "Increased market share by 20% through strategic initiatives.",
+            "Collaborated with project teams to align client requirements with deliverables.",
+            "Conducted industry research to support informed decision- making."
         ],
     },
     {
         id: 2,
-        img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBEQACEQEDEQH/xAAbAAEAAgIDAAAAAAAAAAAAAAAAAgYBBQMEB//EACUQAAEDAwMFAQEBAAAAAAAAAAEAAgMEBRESITEGEyJBURShkf/EABkBAQADAQEAAAAAAAAAAAAAAAABAwQCBf/EACMRAAICAQMEAwEAAAAAAAAAAAABAhEDBCExEhPh8TJhoRT/2gAMAwEAAhEDEQA/APcUAQBAEAQBAEAQBAEAQBAEAQEXvaxpc9wa0cknATkEf0Q5I70eQMkahsFNMi0S7jNHc1t0YzqzsoomyLZ4XAlssZDRkkOGymmRaMGpgDQ4zx6TwdYwUpjqRnvRayzuM1jluoZSmLRmORsgJZkgHGcco1QTs0nXNHUV/S1dTUcLp539vTG3k4e0n+Aq/SzUMylJ0vBRqoOeFxSso9y6dvP6a6rprfK6R4ZC0DHkx8BY88+jhb8eoxVGLf3+mHJp8lykl6qi01dkddKajdP+mnt0VH2329hc1wk9bN2cPWOFjjm7bdbyvk1yw9xK9lXBT5Ol77DHTx09v8qikbFJJE0R9vLvISbnUce/i3LU4m22+HfoxfzZUkkuVXs5JulLy+vNult4FCJJZGSQuzGwuj2AJ3xkN9KFqcSj1qW/k6emyOXQ1t4NlYLLd2XunuVwopGyzwTmocceLsFrW8/AP9VObNj7bhF7KqLcOHIpqclu07L/AEDXMoaZr2lrhE0Fp9HA2Xny+TN8fijsLk6CAIAgCAIAgCAIAgCAIAgCAxvnjZAMn4gGT8QDJ+IBk/EAyfiADOd0B//Z",
-        role: "Bussiness Development Manager",
-        company: "Ingram Micro India Private ltd",
-        date: "Aug 2017 - July 2020",
-        desc: "Sale Manager",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGlD6t89381U1tUR29hLYXxClNPcst1AlBA&s",
+        role: "Sr. Business Development Representative | InterviewBit",
+        date: "May 2022 – Apr 2023 | Bangalore, India",
         skills: [
-            "Market Expansion & Strategy Development",
-            "Client Relationship & Account Management",
-            "Sales Growth & Lead Generation",
-            "Cross-functional Team Leadership & Collaboration",
-            "Budgeting, Financial Analysis & Forecasting",
+            "Achieved 25% revenue growth in the US market.",
+            "Optimized sales strategies using CRM tools, boosting efficiency.",
+            "Consistently surpassed quarterly sales targets."
         ],
     },
-    
+    {
+        id: 3,
+        img: "https://cdn-icons-png.flaticon.com/512/5433/5433974.png",
+        role: "Self-Employed | Stealth Startup",
+        date: "Oct 2020 – Apr 2022 | Durgapur, India",
+        skills: [
+            "Delivered digital transformation projects for SMBs.",
+            "Developed project scopes and timelines, ensuring seamless execution.",
+            "Enhanced operational workflows, improving productivity."],
+    },
+    {
+        id: 4,
+        img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBEQACEQEDEQH/xAAbAAEAAgIDAAAAAAAAAAAAAAAAAgYBBQMEB//EACUQAAEDAwMFAQEBAAAAAAAAAAEAAgMEBRESITEGEyJBURShkf/EABkBAQADAQEAAAAAAAAAAAAAAAABAwQCBf/EACMRAAICAQMEAwEAAAAAAAAAAAABAhEDBCExEhPh8TJhoRT/2gAMAwEAAhEDEQA/APcUAQBAEAQBAEAQBAEAQBAEAQEXvaxpc9wa0cknATkEf0Q5I70eQMkahsFNMi0S7jNHc1t0YzqzsoomyLZ4XAlssZDRkkOGymmRaMGpgDQ4zx6TwdYwUpjqRnvRayzuM1jluoZSmLRmORsgJZkgHGcco1QTs0nXNHUV/S1dTUcLp539vTG3k4e0n+Aq/SzUMylJ0vBRqoOeFxSso9y6dvP6a6rprfK6R4ZC0DHkx8BY88+jhb8eoxVGLf3+mHJp8lykl6qi01dkddKajdP+mnt0VH2329hc1wk9bN2cPWOFjjm7bdbyvk1yw9xK9lXBT5Ol77DHTx09v8qikbFJJE0R9vLvISbnUce/i3LU4m22+HfoxfzZUkkuVXs5JulLy+vNult4FCJJZGSQuzGwuj2AJ3xkN9KFqcSj1qW/k6emyOXQ1t4NlYLLd2XunuVwopGyzwTmocceLsFrW8/AP9VObNj7bhF7KqLcOHIpqclu07L/AEDXMoaZr2lrhE0Fp9HA2Xny+TN8fijsLk6CAIAgCAIAgCAIAgCAIAgCAxvnjZAMn4gGT8QDJ+IBk/EAyfiADOd0B//Z",
+        role: "Associate Telesales | Ingram Micro Cloud",
+        date: "Jan 2019 – Oct 2020 | Durgapur, India",
+        skills: [
+            "Generated $500K+ in revenue by qualifying leads.",
+            "Recognized as a top performer for two consecutive quarters."
+        ],
+    },
+
+
     // {
     //     id: 1,
     //     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
@@ -337,16 +352,7 @@ export const experiences = [
 
 export const education = [
     {
-        id: 0,
-        img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADgAOAMBIgACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAABQYHBAgDAf/EADMQAAEDAwMCBAMHBQEAAAAAAAECAwQFERIABiExQRMUInEHFWEyQlFTYpGhUnKBosEz/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgMEBQYBAP/EACkRAAEEAQIFAgcAAAAAAAAAAAEAAgMRMQQSBSFBUaHR8BQiMmFxgcH/2gAMAwEAAhEDEQA/ANx1Kbp3zAoT/kIzLtSqyk3TBi8qT+BWfuDkfXkca4vihu93b0Bin0kpVWqkS3FBIs32KzfjvYX4v9AdZFWZydpoVEjurdqylqcXNClIe9YGXigi+R5IB5TweSEqVKg0++ieuB76ISaVfP3fuic0mU/WqZSIxIUI8TFTq0kXT613HOTRySLALubWsUm2t81aBv1pNYr8iVRQtaVrUc0YlBxNgObHHkC3B7azKXMkS3VuyHVLWs3USep08fbpzc6D59sJilK88UmxOPpyxsSnK17c2vbU58LYXNjcL3A4GKFp0UDpYZJQforyaWy7M+Ib9Zru45FQejxqDAR4jJWjFYTewN+9wkm1r3UBq02nuKJumjN1SA0+0wtSkBL6QFXSbHoSLa82/J6dLpUmVS5wKmCt1xt02QhoKWPsm6k8Bqxuci6B90nT7be59zVFug7Ooa0UoJdF3mk2cIuXMlX6jG6rD7XsbaVLpGkEs5V4FJAd3Xo3RrkhVCHLW8zEmMSHY5CHg24FFCrdFW6HRqsRrCqzVlTt/wBcrq5ASimLMWOlSig4oSoHAhSTcqFreq4dN0kaz+VDlzXy+VBwuJKwocZG/PHQe3TVMie3Ep+4oT09hiS/UHApgoc8V2yhb1J4xuDcK4697a6KOuENjFC/B88SrwwQPEtdq1u/QL/nVjqNQ/SM3s/HPtSm8N0seql2SX0x9zSi0UmSspAAGSM0k9Pb6HTWpwHZhjhBCQgEKUT06aut2Gi+QV8qETx/MJt4AF8MpF+na3hf664ty/LS4x8q8G13M/BHH2/T/Gqufik7pWycrbj98lo9Dw7TGExbXVJm+m3n5WdwXJMJfnoqwktKAIPIUO4I6KT0BB4N7d9UlQjtVOkiuQGXkP5KM152UVLWTbOwJviklNj/AEnkqN8eCLESKeUrTyoXP489f8249wNfOJVIsShTaPMhuPOLdU424l5YSheISk4ggHv1BuDrUyW+nNz/ABYkEWQtd+E9b2dSUQqHSHJD1XnAGS6qOU3cCSopJ7JTyABcfuTo0u+EVflQlxqY3tB0okOFLtXZbUAoFROSzjYgf3dtGqHVN2yn1TW4S7dVFj03flZp0xEdqPVwJUWQ402pYKjZaWysWSrIqPHNk2AyUm0fJDUN9ceQpht1tRSpKklJuPp2/G3UX16D3/tQbmprSojiWKrCX40GQfurFvSf0mwv7A82trCKnHk1OSuDX3HE7jU+GkRjHwKTc+k2TiUWtioHjLpjdRnaaUPHzdM+qE2MGkv8zE/Oi/udfnmIn50b9zpZU6LPpj6mpUdaSkgXtcG4BFrdeCDxpeQR1BGrNsMThbUG9/cqkVUIqFoSHGzmTkpJ4T7++vg69CCVLR4S3APSkG5J7DSqBBlVGSmNCYW88rohA51cbb247DmCLCvLrsppSY3g/YYQoW8fIi6MTyF85AjEc5AJnshGeaENtaR8KHK9GdTR5dQizadFhoUcUDOMs2wbySbEWyPPNsTwCNfmrXa1DTQaUiMXfMSV2XJkFISXXLAXsOgAAAHYADRrOSO3uJTwnGkW59pUncraPmDKkSWv/GWwrB5k/pV/w3GjRoQS02F1Qbvw4r9NcnLpsum1dM14OvGptqS6bXBGQuDdKlp6DhR9tK53w+rtSbqxmbfimXKQwiJIVPSfL4ABSjZIuVWv0720aNO+Ifnr77LlBUdM+Hc1CvU5BpLakqC/l6M3iCq9syEpFhZIuhRAy5uonVrQNvUzb8dbNNj4FxWbzq1Fbjyu6lrPKjyeujRpbpHOyvUmujRo0C6v/9k=",
-        Collage: "Dr BC Roy Engineering College, MAKAUT University, Durgapur, West Bengal",
-        date: "Aug 2016 - Sep 2019",
-        grade: "8.71 CGPA",
-        desc: "I completed my BBA education at Dr BC Roy Engineering Collage, Durgapur, where I studied BBA with Finance.",
-        degree: "Bachelor of Bussiness Adminstration - BBA",
-    },
-    {
-        id: 1,
+        id: 2,
         img: "data:image/jpeg;base64,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",
         Collage: "Dr BC Roy Engineering College,MAKAUT University, Durgapur, West Bengal",
         date: "sept 2019 - Apr 2021",
@@ -354,135 +360,65 @@ export const education = [
         desc: "I completed my MBA education at Dr BC Roy Engineering Collage, Durgapur, where I studied MBA with Finance.",
         degree: "Master of Business Administration - MBA",
     },
+    {
+        id: 1,
+        img: "data:image/jpeg;base64,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",
+        Collage: "Dr BC Roy Engineering College, MAKAUT University, Durgapur, West Bengal",
+        date: "Aug 2016 - Sep 2019",
+        grade: "8.71 CGPA",
+        desc: "I completed my BBA education at Dr BC Roy Engineering Collage, Durgapur, where I studied BBA with Finance.",
+        degree: "Bachelor of Bussiness Adminstration - BBA",
+    }
 ];
 
 export const projects = [
     {
-        id: 9,
-        title: "Trackify",
-        date: "Jun 2023 - Jul 2023",
-        description:
-            "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-        image:
-            "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-        tags: [
-            "Docker",
-            "AWS",
-            "DuckDNS",
-            "Eslint",
-            "Husky",
-            "CI/CD",
-            "React Js",
-            "MongoDb",
-            "Node Js",
-            "Express Js",
-            "Redux",
-        ],
-        category: "web app",
-        github: "https://github.com/rishavchanda/Trackify",
-        webapp: "https://trackify.duckdns.org",
-    },
-    {
-        id: 0,
-        title: "Podstream",
-        date: "Apr 2023 - May 2023",
-        description:
-            "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-        image:
-            "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-        tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-        category: "web app",
-        github: "https://github.com/rishavchanda/Podstream",
-        webapp: "https://podstream.netlify.app/",
-        member: [
-            {
-                name: "Rishav Chanda",
-                img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-                linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-                github: "https://github.com/rishavchanda/",
-            },
-            {
-                name: "Upasana Chaudhuri",
-                img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-                linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-                github: "https://github.com/upasana0710",
-            },
-        ],
-    },
-    {
         id: 1,
-        title: "Vexa",
-        date: "Oct 2022 - Present",
-        description:
-            "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-        image:
-            "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+        title: "AgroSpace Solution",
+        description:"Analytics platform with integrated robust AI model powered by a sophisticated algorithm with narrative visual effects.",
+        image: project1,
         tags: [
+            "AWS",
             "React Js",
             "MongoDb",
             "Node Js",
             "Express Js",
             "Redux",
-            "NodeMailer",
         ],
-        category: "web app",
-        github: "https://github.com/rishavchanda/Project-Management-App",
-        webapp: "https://vexa-app.netlify.app/",
+        webapp: "https://my.agrospace.io/",
     },
     {
         id: 2,
-        title: "Brain Tumor Detection",
-        date: "Jan 2023 - Mar 2023",
-        description:
-            "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-        image:
-            "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-        tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-        category: "machine learning",
-        github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-        webapp: "https://brain-tumor.netlify.app/",
-        member: [
-            {
-                name: "Rishav Chanda",
-                img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-                linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-                github: "https://github.com/rishavchanda/",
-            },
-            {
-                name: "Upasana Chaudhuri",
-                img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-                linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-                github: "https://github.com/upasana0710",
-            },
+        title: "Empowering Marine",
+        description:"A robust and user-centric web portal designed to streamline marine and offshore operations, enhancing efficiency and connectivity for industry professionals.",
+        image: project2,
+        tags: [
+            "AWS",
+            "React Js",
+            "MongoDb",
+            "Node Js",
+            "Express Js",
+            "Redux",
         ],
+        webapp: "https://ecommerce-website-frontend.vercel.app/",
     },
     {
         id: 3,
-        title: "Buckoid",
-        date: "Dec 2021 - Apr 2022",
-        description:
-            "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
-        image:
-            "https://camo.githubusercontent.com/fbf405040ae86b5d4a40f24e4ac034982cb8c0e2d850560ba64527997b258be8/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f6c6f67696e2d65613565322e61707073706f742e636f6d2f6f2f4255434b4f49442532302831292e706e673f616c743d6d6564696126746f6b656e3d32653735376235372d323964372d346263612d613562322d653164346538313432373435",
-        tags: ["Kotlin", "MVVM", "Room Database", "Google Drive Cloud API"],
-        category: "android app",
-        github: "https://github.com/rishavchanda/Buckoid-Android-App",
-        webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
+        title: "E-Commerce Website",
+        description:"An elegant e-commerce platform offering premium wellness and care products for men and women, blending style with self-care.",
+        image: project3,
+        tags: [
+            "Redis",
+            "AWS",
+            "React Js",
+            "MongoDb",
+            "Node Js",
+            "Express Js",
+            "Redux",
+        ],
+        webapp: "https://quantumasync.onrender.com/",
     },
-    {
-        id: 10,
-        title: "Job Finding App",
-        date: "Jun 2023 - Jul 2023",
-        description:
-            "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-        image:
-            "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-        tags: ["React Native", "JavaScript", "Axios"],
-        category: "android app",
-        github: "https://github.com/rishavchanda/Job-finder-App",
-        webapp: "https://github.com/rishavchanda/Job-finder-App",
-    },
-    
+
 ];
 
 export const TimeLineData = [

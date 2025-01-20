@@ -210,13 +210,13 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                             <Label>Members</Label>
                             <Members>
                                 {project?.member.map((member) => (
-                                    <Member key={member.id}>
-                                        <MemberImage src={member.img} />
+                                    <Member key={member?.id}>
+                                        <MemberImage src={member?.img} />
                                         <MemberName>{member.name}</MemberName>
-                                        <a href={member.github} target="new" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <a href={member?.github} target="new" style={{ textDecoration: 'none', color: 'inherit' }}>
                                             <GitHub />
                                         </a>
-                                        <a href={member.linkedin} target="new" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                        <a href={member?.linkedin} target="new" style={{ textDecoration: 'none', color: 'inherit' }}>
                                             <LinkedIn />
                                         </a>
                                     </Member>
@@ -225,7 +225,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
+                        {/* <Button dull href={project?.github} target='new'>View Code</Button> */}
                         <Button href={project?.webapp} target='new'>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>

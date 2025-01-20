@@ -75,7 +75,7 @@ export const HeroLeftContainer = styled.div`
 `;
 
 export const HeroRightContainer = styled.div`
-  width: 100%;
+  {'' /* width: 100%; */}
   display: flex;
   order: 2;
   justify-content: end;
@@ -151,7 +151,7 @@ export const Span = styled.span`
 `;
 
 export const SubTitle = styled.div`
-  font-size: 20px;
+  font-size: 15px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
