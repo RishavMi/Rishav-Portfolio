@@ -2,6 +2,7 @@ import { DiCssdeck } from "react-icons/di"
 import { ButtonContainer, MobileIcon, MobileLink, MobileMenu, Nav, NavbarContainer, NavItems, NavLink, NavLogo, Span } from "./NaBarStyle"
 import { FaBars } from "react-icons/fa"
 import { useState } from "react";
+import logo from "../../assets/Idika.png"
 // import { useTheme } from "styled-components";
 
 
@@ -13,7 +14,9 @@ const NavBar = () => {
       <NavbarContainer>
         <NavLogo to='/'>
           <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <DiCssdeck size="3rem" /> <Span>Rishav Mishra</Span>
+            {/* <DiCssdeck size="3rem" /> */}
+            <img src={logo} alt="logo" style={{"width": "40px"}} />
+             <Span>ishav Mishra</Span>
           </a>
         </NavLogo>
         <MobileIcon>

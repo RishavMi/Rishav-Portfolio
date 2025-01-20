@@ -357,7 +357,7 @@ export const education = [
         Collage: "Dr BC Roy Engineering College,MAKAUT University, Durgapur, West Bengal",
         date: "sept 2019 - Apr 2021",
         grade: "88.2%",
-        desc: "I completed my MBA education at Dr BC Roy Engineering Collage, Durgapur, where I studied MBA with Finance.",
+        desc: "I completed my MBA education at Dr BC Roy Engineering Collage, Durgapur.",
         degree: "Master of Business Administration - MBA",
     },
     {
@@ -366,7 +366,7 @@ export const education = [
         Collage: "Dr BC Roy Engineering College, MAKAUT University, Durgapur, West Bengal",
         date: "Aug 2016 - Sep 2019",
         grade: "8.71 CGPA",
-        desc: "I completed my BBA education at Dr BC Roy Engineering Collage, Durgapur, where I studied BBA with Finance.",
+        desc: "I completed my BBA education at Dr BC Roy Engineering Collage, Durgapur.",
         degree: "Bachelor of Bussiness Adminstration - BBA",
     }
 ];
