@@ -147,7 +147,7 @@ const About = () => {
   ];
 
   return (
-    <Container id="about">
+    <Container id="skills">
       <Wrapper>
         <Title>Project Management Skills</Title>
         <Desc>

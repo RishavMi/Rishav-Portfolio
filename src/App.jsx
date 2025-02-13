@@ -12,6 +12,7 @@ import About from "./Components/About/About";
 import ProjectDetails from "./Components/ProjectDetails/ProjectDetails";
 import Projects from "./Components/Projects/Project";
 
+
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
@@ -35,7 +36,7 @@ function App() {
           <Banner />
           <Wrapper>
             <About />
-            {/* <Skill /> */}
+            {/* <Skills /> */}
             <Projects openModal={openModal} setOpenModal={setOpenModal} />
             <Experience />
           </Wrapper>
