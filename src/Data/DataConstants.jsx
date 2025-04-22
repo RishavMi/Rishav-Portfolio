@@ -1,6 +1,10 @@
 import project1 from "../assets/project1.png"
 import project2 from "../assets/project2.png"
 import project3 from "../assets/project3.png"
+import project4 from "../assets/project7.png"
+import project5 from "../assets/project8.png"
+import project6 from "../assets/project9.png"
+import certificate from "../assets/CERTIFICATE_LANDING_PAGE~NR3WED8V1EZP-Picsart-AiImageEnhancer.jpeg"
 
 
 
@@ -400,7 +404,7 @@ export const projects = [
             "Express Js",
             "Redux",
         ],
-        webapp: "https://ecommerce-website-frontend.vercel.app/",
+        webapp: "https://oceanq.eu/",
     },
     {
         id: 3,
@@ -418,6 +422,54 @@ export const projects = [
         ],
         webapp: "https://quantumasync.onrender.com/",
     },
+    {
+        id: 4,
+        title: "E-Commerce Website",
+        description:"An elegant e-commerce platform offering premium wellness and care products for men and women, blending style with self-care.",
+        image: project4,
+        tags: [
+            "Redis",
+            "AWS",
+            "React Js",
+            "MongoDb",
+            "Node Js",
+            "Express Js",
+            "Redux",
+        ],
+        webapp: "https://quantumasync.onrender.com/",
+    },
+    {
+        id: 5,
+        title: "CRM Dashboard",
+        description:"User‑centric CRM suite. Designed to help you manage your customer relationships and drive sales growth.",
+        image: project5,
+        tags: [
+            "Redis",
+            "AWS",
+            "React Js",
+            "MongoDb",
+            "Node Js",
+            "Express Js",
+            "Redux",
+        ],
+        webapp: "https://cloud.idurarapp.com/",
+    },
+    {
+        id: 6,
+        title: "Admin Panel",
+        description:"E‑commerce admin console for managing products, orders, and customers, providing a comprehensive solution for e‑commerce businesses.",
+        image: project6,
+        tags: [
+            "Redis",
+            "AWS",
+            "React Js",
+            "MongoDb",
+            "Node Js",
+            "Express Js",
+            "Redux",
+        ],
+        webapp: "https://fem-cartel.vercel.app/admin/dashboard",
+    },
 
 ];
 
@@ -428,3 +480,36 @@ export const TimeLineData = [
     { year: 2020, text: "Shared my projects with the world" },
     { year: 2021, text: "Started my own platform" },
 ];
+
+
+export const certificationss = [
+    {
+      title: 'Google Project Management',
+      issuer: 'Coursera · Stanford University',
+      date: 'Dec 2024',
+      logo: certificate,
+      link: 'https://www.coursera.org/account/accomplishments/professional-cert/NR3WED8V1EZP?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof',
+    },
+    // add more certificates as needed
+  ];
+
+  export const certifications = [
+    {
+      title: 'Google Project Management: Specialization',
+      issuer: 'Coursera · Google',
+      completedBy: 'Rishav Mishra',
+      date: 'January 10, 2025',
+      duration: 'Approx. 6 months at 10 hrs/week',
+      logo: certificate,
+      link: 'https://www.coursera.org/account/accomplishments/professional-cert/NR3WED8V1EZP?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof',
+      courses: [
+        'Foundations of Project Management',
+        'Project Initiation: Starting a Successful Project',
+        'Project Planning: Putting It All Together',
+        'Project Execution: Running the Project',
+        'Agile Project Management',
+        'Capstone: Applying Project Management in the Real World',
+      ],
+    },
+    // add additional certificates here
+  ];

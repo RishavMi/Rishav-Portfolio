@@ -31,7 +31,6 @@ const Banner = () => {
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
-
                         <Img src={Avatar} alt="hero-image" />
                     </HeroRightContainer>
                 </HeroInnerContainer>

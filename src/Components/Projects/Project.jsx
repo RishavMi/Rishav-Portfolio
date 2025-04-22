@@ -7,6 +7,7 @@ import ProjectCards from '../Card/ProjectCards'
 
 const Projects = ({openModal,setOpenModal}) => {
   const [toggle, setToggle] = useState('all');
+
   return (
     <Container id="projects">
       <Wrapper>
@@ -55,4 +56,4 @@ const Projects = ({openModal,setOpenModal}) => {
   )
 }
 
-export default Projects
+export default Projects;
