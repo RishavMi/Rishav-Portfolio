@@ -1,171 +1,227 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  align-items: center;
+const float = keyframes`
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
 `;
 
-const Wrapper = styled.div`
-  position: relative;
+const Container = styled.section`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
-  max-width: 1100px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
+  align-items: center;
+  padding: 100px 20px;
+  background: ${({ theme }) => `linear-gradient(135deg, ${theme.background} 0%, ${theme.card} 100%)`};
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle at top left, ${({ theme }) => theme.accent}33, transparent 70%);
+    top: -100px;
+    left: -100px;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle at bottom right, ${({ theme }) => theme.accent}22, transparent 80%);
+    bottom: -150px;
+    right: -150px;
+    transform: rotate(-30deg);
   }
 `;
 
-export const Title = styled.div`
-  font-size: 42px;
+const Title = styled.h2`
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 8px;
   text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: ${({ theme }) => theme.accent};
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 `;
 
-export const Desc = styled.div`
-  font-size: 14px;
+const SubTitle = styled.p`
+  font-size:18px;
+  margin: 0 0 64px;
   text-align: center;
-  max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
+  max-width: 700px;
+  line-height: 1.5;
 `;
 
-const SkillsContainer = styled.div`
+const ServicesGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 48px;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  gap: 30px;
-  justify-content: center;
+  max-width: 1300px;
 `;
 
-const SkillSection = styled.div`
-  width: 100%;
-  max-width: 500px;
-  background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854ce6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 16px;
-  padding: 18px 36px;
+const ServiceCard = styled.div`
+  background: ${({ theme }) => theme.background};
+  border-radius: 24px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+  }
+
   @media (max-width: 768px) {
-    max-width: 400px;
-    padding: 10px 36px;
-  }
-  @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 `;
 
-const SectionTitle = styled.h2`
-  font-size: 28px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 20px;
-  text-align: center;
-`;
+const IconWrapper = styled.div`
+  flex-shrink: 0;
 
-const SectionContent = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
-  text-align: center;
-`;
-
-const SkillItem = styled.p`
-  font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
-  border-radius: 12px;
-  padding: 12px 16px;
+  width: 10px;
+  height: 64px;
+  background: ${({ theme }) => theme.accent};
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-  @media (max-width: 500px) {
-    font-size: 14px;
-    padding: 6px 12px;
+  font-size: 32px;
+  animation: ${float} 6s ease-in-out infinite;
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+const ServiceTitle = styled.h3`
+  font-size: 22px;
+  font-weight: 700;
+  color: ${({ theme }) => theme.text_primary};
+  margin: 0;
+`;
+
+const ServiceList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: ${({ theme }) => theme.text_secondary};
+  line-height: 1.4;
+
+  li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 15px;
+
+    &::before {
+      content: '✔';
+      position: absolute;
+      left: 0;
+      top: 2px;
+      color: ${({ theme }) => theme.accent};
+      font-size: 14px;
+    }
   }
 `;
 
 const About = () => {
-  const businessDevelopmentSkills = [
+  const services = [
     {
-      title: 'Project Mannagement',
-      skills: [
-        'Agile, Scrum, Waterfall',
-        'Risk assessment and mitigation',
-        'Jira, Asana, MS Project tools',
+      icon: '🚀',
+      title: 'Smooth Project Delivery',
+      points: [
+        'Keep your project on track, start to finish',
+        'Remove obstacles before they become problems',
+        "Clear updates so you always know what’s next",
       ],
     },
     {
-      title: 'Bussiness Development',
-      skills: [
-        'Market Analysis and prospecting',
-        'Sales funnel optimization',
-        'CRM Tools Salesforce, Apollo.io',
+      icon: '🔄',
+      title: 'Workflow Automation',
+      points: [
+        'Automate repetitive tasks and save hours each week',
+        'Design systems tailored to your workflow',
+        'Enable your team to focus on what matters',
       ],
     },
     {
-      title: 'Client Relationship Management',
-      skills: [
-        'Client needs assessment',
-        'Feedback - driven improvement',
-        'Proactive issue resolution',
+      icon: '🌐',
+      title: 'No-Code Development',
+      points: [
+        'Launch websites, dashboards, and tools fast',
+        'Build MVPs without big budgets or delays',
+        'Scale or update easily as needs grow',
       ],
     },
     {
-      title: 'Straegic Planning & Analytics',
-      skills: [
-        'KPI monitoring and reporting',
-        'Google Analytics expertise',
-        'Market trend analysis',
+      icon: '🤖',
+      title: 'AI & Smart Tools',
+      points: [
+        'Integrate AI for better decisions and faster support',
+        'Custom chatbots, automation, and data solutions',
+        'Stay ahead with the latest tech—no jargon',
+      ],
+    },
+    {
+      icon: '🤝',
+      title: 'A True Partner',
+      points: [
+        "I care about your goals, not just the project",
+        'Easy communication—ask me anything anytime',
+        'Solutions tailored to your business, not one-size-fits-all',
       ],
     },
   ];
 
   return (
-    <Container id="skills">
-      <Wrapper>
-        <Title>Project Management Skills</Title>
-        <Desc>
-          These are the core skills I bring as a Project Manager, helping companies grow by identifying new opportunities and building strong client relationships.
-        </Desc>
-        <SkillsContainer>
-          {businessDevelopmentSkills.map((section) => (
-            <SkillSection key={section.title}>
-              <SectionTitle>{section.title}</SectionTitle>
-              <SectionContent>
-                {section.skills.map((skill, index) => (
-                  <SkillItem key={index}>{skill}</SkillItem>
+    <Container id="services">
+      <Title>My Services</Title>
+      <SubTitle>
+        I help businesses succeed with professional project delivery,
+        automation, and lasting partnership.
+      </SubTitle>
+      <ServicesGrid>
+        {services.map(({ icon, title, points }) => (
+          <ServiceCard key={title}>
+            <IconWrapper>{icon}</IconWrapper>
+            <Content>
+              <ServiceTitle>{title}</ServiceTitle>
+              <ServiceList>
+                {points.map((text, idx) => (
+                  <li key={idx}>{text}</li>
                 ))}
-              </SectionContent>
-            </SkillSection>
-          ))}
-        </SkillsContainer>
-      </Wrapper>
+              </ServiceList>
+            </Content>
+          </ServiceCard>
+        ))}
+      </ServicesGrid>
     </Container>
   );
 };
