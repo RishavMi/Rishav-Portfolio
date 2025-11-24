@@ -4,7 +4,6 @@ import project3 from "../assets/project3.png"
 import project4 from "../assets/project7.png"
 import project5 from "../assets/project8.png"
 import project6 from "../assets/project9.png"
-import project7 from "../assets/project10.png"
 import certificate from "../assets/CERTIFICATE_LANDING_PAGE~NR3WED8V1EZP-Picsart-AiImageEnhancer.jpeg"
 
 
@@ -459,7 +458,7 @@ export const projects = [
         id: 7,
         title: "NGO Web App",
         description:"Dheodha Vikas Samiti is a community development organization website built to showcase village development initiatives, social welfare programs, and community empowerment activities",
-        image: project7,
+        image: "https://res.cloudinary.com/dusalynec/image/upload/v1763976347/Screenshot_2025-11-24_144533_lgo4ge.png",
         tags: [
             "Next.js",
             "Versel",
